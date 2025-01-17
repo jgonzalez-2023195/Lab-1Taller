@@ -108,12 +108,12 @@ body {
     height: 650px;
 }
 
-.carousel {
+.section1 video {
     width: 100%;
     overflow: hidden;
     position: relative;
-    
 }
+
 .section2 {
     text-align: center;
     height: 600px;
@@ -293,68 +293,93 @@ body {
 
 /* Diseño base de section6 */
 .section6 {
-    background-color: #edebeb;
-    padding: 50px 20px;
+    background-color: #edebeb;;
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
 }
 
-.Aalumno {
-    align-items: center;
-    text-align: center;
-    height: 300px;
-    width: 900px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.antiguo { 
+    width: 100%;
 }
 
-.containerA{
-    display: flex;
+.AntiguoA{
+	width: 100%;
+    height: 650px;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    background-color: red;
+}
+.AntiguoA .box{
+	position: relative;
+	width: 50%;
+	height: 98%;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.AntiguoA .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.AntiguoA .box .imgBox img{
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 2s;
+}
+.AntiguoA .box:hover .imgBox img{
+	transform: scale(1.2);
+}
+.AntiguoA .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: black;
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.AntiguoA .box:hover .details{
+	transform: scaleY(1);
+}
+.AntiguoA .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+.AntiguoA .box .details .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+.AntiguoA .box .details .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	color: #000;
+	text-align: center;
+}
+@media screen and (max-width: 1290px) {
+	.AntiguoA {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.AntiguoA .box {
+		display: block;
+	}
 }
 
-.Aalumno {
-    margin: 200px 0;
-}
-
-.containerA img {
-    width: 80%;
-    height: 100%;
-    margin: 0 55px;
-}
-.Aalumno h3 {
-    font-size: 34px;
-    color: #1a2d84;
-}
-
-.Aalumno h6 {
-    font-size: 34px;
-    color: #1a2d84;
-    font-weight: normal;
-}
-
-.Aalumno p {
-    font-size: 24px;
-    color: #333;
-}
-
-button {
-    background-color: #ffcc00;
-    color: #1a2d84;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #e6b800;
-}
 /* Placeholder para otras secciones */
 .galeria, .donaciones {
     width: 100%;
@@ -370,74 +395,10 @@ button:hover {
 
 
 
-@media (width >= 300px){}
+@media (width >= 300px){
+    
+}
 @media (width > 1000px){}
 @media (640px <= width < 768px){
-    .nav_container {
-        padding: 0 50px;
-    }
-    .nav_item {
-        font-size: 12px;
-    }
-    .nav_link {
-        padding: 5px 10px;
-    }
-    .sub_list {
-        top: 100%;
-    }
-    .sub_link {
-        padding: 10px 15px;
-    }
-    .section1 {
-        height: 500px;
-    }
-    .section2 {
-        height: 500px;
-    }
-    .section3 {
-        height: 500px;
-    }
-    .section_container {
-        height: 450px;
-    }
-    .txt h1 {
-        font-size: 30px;
-    }
-    .txt p {
-        font-size: 16px;
-    }
-    .section4 {
-        height: 400px;
-    }
-    .section4 h3 {
-        font-size: 25px;
-    }
-    .partners img {
-        max-width: 120px;
-    }
-    .section5 {
-        height: 450px;
-    }
-    .section6 {
-        padding: 50px 10px;
-    }
-    .Aalumno {
-        width: 700px;
-    }
-    .containerA img {
-        margin: 0 35px;
-    }
-    .Aalumno h3 {
-        font-size: 30px;
-    }
-    .Aalumno h6 {
-        font-size: 30px;
-    }
-    .Aalumno p {
-        font-size: 20px;
-    }
-    button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
+
 }
