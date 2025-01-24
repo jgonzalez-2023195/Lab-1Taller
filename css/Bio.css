@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 
-encabezado{
+.encabezado{
     background-color: white;
     padding: 10px 2px;
     height: 69px;
