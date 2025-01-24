@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 
-.encabezado{
+encabezado{
     background-color: white;
     padding: 10px 2px;
     height: 69px;
@@ -55,13 +55,12 @@ body {
 .nav_link {
     display: block;
     padding: 5px 15px;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     font-weight: bold;
     position: relative;
     color: var(--colorLetter);
 }
 
-/* Subrayado animado */
 .nav_link::after {
     content: '';
     position: absolute;
@@ -70,12 +69,11 @@ body {
     width: 0;
     height: 2px;
     background-color: var(--colorLetter);
-    transition: width 0.3s ease; /* Animación suave */
+    transition: width 0.3s ease;
 }
 
-/* Mostrar el subrayado al hacer hover */
 .nav_link:hover::after {
-    width: 100%; /* Extender la línea en hover */
+    width: 100%; 
 }
 
 .nav_link i {
@@ -100,7 +98,7 @@ body {
 .sub_link {
     display: block;
     padding: 15px 25px;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     font-weight: bold;
 }
 
