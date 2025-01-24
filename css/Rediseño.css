@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root{
     --color_Kinal: #20346b;
     --neon-yellow: #f6b720;
@@ -9,6 +11,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -749,7 +754,7 @@ button {
 }
 
 .intencion {
-    background-color: #781442;
+    background-color: #19233e;
     height: 60px;
     display: block;
 }
@@ -758,12 +763,4 @@ button {
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-@media (width >= 300px){
-    
-}
-@media (width > 1000px){}
-@media (640px <= width < 768px){
-
 }

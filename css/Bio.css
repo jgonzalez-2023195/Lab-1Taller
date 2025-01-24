@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
 :root {
     --colorLetter: #20346b;
 }
@@ -5,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font: italic 300 1em "Kanit", serif;
 }
 
 body {
@@ -585,6 +588,7 @@ body {
     }
 }
 
+/* Media Queries Laptop */
 @media (width >= 992px ) and (width <= 1199px) {
     .encabezado{
         padding: 10px 0;
