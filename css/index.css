@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+}
+
+.encabezado{
+    background-color: white;
+    padding: 10px 2px;
+    height: 69px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nav_container {
+    justify-content: space-between;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.nav_div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav_item {
+    margin: 0 20px;
+    color:  var(--colorLetter);   
+    position: relative;
+    font-size: 14px;
+}
+
+.nav_link {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    color: var(--colorLetter);
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--colorLetter);
+    transition: width 0.3s ease;
+}
+
+.nav_link:hover::after {
+    width: 100%; }
+
+.nav_link i {
+    font-size: 24px;
+}
+
+.sub_list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.sub_item {
+    margin: 5px 0;
+}
+
+.sub_link {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub_link:hover {
+    background-color: #c3ab30;
+    color: white;
+}
+
+.nav_item:hover .sub_list {
+    display: block;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo_img {
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    
+}
+
+
+.raceIntro {
+	justify-content: space-between;
+	align-items: center;
+	padding: 259px 2px;
+	margin: 0 0;
+    background: linear-gradient(rgba(63, 66, 80, 0.7), rgba(33, 34, 36, 0.7)), url(../img/Index/race-car.jpg) no-repeat center / cover;
+    border-radius: 10px;
+}
+
+.raceIntro h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.raceIntro p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.categorias {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.F1Intro {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+	margin: 50px 0;
+	margin-bottom: 100px;
+	gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.F1Intro .textF1 h2 {
+    font-size: 45px;
+}
+
+.F1Intro .textF1 p {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.F1Intro .textF1 {
+    flex: 5;
+}
+
+.F1Intro .imgF1 {
+    flex: 2;
+	display: flex;
+	justify-content: right;
+}
+
+.F1Intro .imgF1 img {
+    width: 350px;
+}
