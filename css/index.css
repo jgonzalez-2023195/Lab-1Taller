@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 400 1em "Macondo", serif;
+}
+
+body {
+    background-color: rgb(224, 224, 255);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.encabezado{
+    background-color: white;
+    padding: 10px 2px;
+    height: 69px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nav_container {
+    justify-content: space-between;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.nav_div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav_item {
+    margin: 0 20px;
+    color:  var(--colorLetter);   
+    position: relative;
+    font-size: 14px;
+}
+
+.nav_link {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    color: var(--colorLetter);
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--colorLetter);
+    transition: width 0.3s ease;
+}
+
+.nav_link:hover::after {
+    width: 100%; }
+
+.nav_link i {
+    font-size: 24px;
+}
+
+.sub_list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.sub_item {
+    margin: 5px 0;
+}
+
+.sub_link {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub_link:hover {
+    background-color: #c3ab30;
+    color: white;
+}
+
+.nav_item:hover .sub_list {
+    display: block;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo_img {
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    
+}
+
+/*Intro*/
+.raceIntro {
+	justify-content: space-between;
+	align-items: center;
+	padding: 259px 2px;
+	margin: 0 0;
+    background: linear-gradient(rgba(63, 66, 80, 0.7), rgba(33, 34, 36, 0.7)), url(../img/Index/race-car.jpg) no-repeat center / cover;
+    border-radius: 10px;
+	margin: 50px 0;
+}
+
+.raceIntro h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.raceIntro p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Categorias*/
+.categorias {
+    background-color: transparent;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.categorias p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.intro {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+	margin: 50px 0;
+	gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.intro .textDer h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.intro .textDer p {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.intro .textDer {
+    flex: 5;
+}
+
+.intro .imgIz {
+    flex: 2;
+	display: flex;
+	justify-content: right;
+}
+
+.intro .imgIz img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.introDerIz {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+	margin: 50px 0;
+	gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.introDerIz .textDer h2 {
+    font-size: 45px;
+}
+
+.introDerIz .textDer p {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.introDerIz .textDer {
+    flex: 5;
+}
+
+.introDerIz .imgIz {
+    flex: 2;
+	display: flex;
+	justify-content: right;
+}
+
+.introDerIz .imgIz img {
+    width: 350px;
+}
+
+.introIzDer {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+	margin: 50px 0;
+	gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.introIzDer .textIz h2 {
+    font-size: 45px;
+}
+
+.introIzDer .textIz p {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.introIzDer .textIz {
+    flex: 5;
+}
+
+.introIzDer .imgDer {
+    flex: 2;
+	display: flex;
+	justify-content: right;
+}
+
+.introIzDer .imgDer img {
+    width: 350px;
+}
+
+button {
+    --primary-color: #352beb;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+  
+button:hover {
+    background-color: var(--hover-color);
+    background: black;
+}
+
+/*Pie de pagina = Footer*/
+.footer {
+    background-color: transparent;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer .textFinal {
+    font-size: 15px;
+}
+
+.footer hr {
+    margin: 25px 545px;
+}
+
+.footer h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.footer i {
+    font-size: 26px;
+    color: var(--colorLetter);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer .socialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer .socialLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--colorLetter);
+    position: relative;
+}
+
+.footer .socialLink i:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+.footer .socialName {
+    font-size: 15px;
+    color: var(--colorLetter);
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+}
+
+.footer .socialLink:hover .socialName {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (width <= 767px){
+    .encabezado{
+        padding: 10px 0;
+        height: 45px; 
+        align-items: center;
+    }
+
+    .nav_container {
+        padding: 0 20px;
+        height: 50px;
+    }
+
+    .nav_item {
+        margin: 0 1px;
+        font-size: 12px;
+    }
+    
+    .nav_link {
+        padding: 5px 10px;
+    }
+
+    .nav_list {
+        justify-content: space-around;
+    }
+
+    .sub_list {
+        top: 100%;
+        left: -150%;
+    }
+
+    .sub_link {
+        font-size: 12px;
+    }
+
+    .logo_img {
+        height: 40px;
+        width: 100%;
+    }
+
+    .raceIntro {
+        flex-direction: column;
+        padding: 110px 10px;
+        margin: 20px 0;
+        gap: 20px;
+    }
+
+    .raceIntro h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .raceIntro p {
+        font-size: 18px;
+    }
+
+    .categorias {
+        padding: 10px 0;
+    }
+
+    .categorias p {
+        font-size: 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px 10px;
+        margin: 50px 0;
+        gap: 20px;
+    }
+
+    .intro .textDer h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .intro .textDer p {
+        font-size: 17px;
+    }
+
+    .intro .imgIz img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .introDerIz {
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .introDerIz .textDer h2 {
+        font-size: 30px;
+    }
+
+    .introDerIz .textDer p {
+        font-size: 15px;
+    }
+
+    .introDerIz .imgIz img {
+        width: 200px;
+    }
+
+    .introIzDer {
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .introIzDer .textIz h2 {
+        font-size: 30px;
+    }
+
+    .introIzDer .textIz p {
+        font-size: 15px;
+    }
+
+    .introIzDer .imgDer img {
+        width: 200px;
+    }
+
+    button {
+        padding: 0.8em 1.5em;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer .textFinal {
+        font-size: 12px;
+    }
+
+    .footer hr {
+        margin: 25px 100px;
+    }
+
+    .footer h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer i {
+        font-size: 25px;
+        gap: 10px;
+    }
+
+    .footer .socialName {
+        font-size: 12px;
+    }
+
+    .footer .socialNetworks {
+        gap: 5px;
+    }
+}
+
+@media (width >= 768px) and (width <= 991px) {
+    .encabezado{
+        padding: 10px 0;
+        height: 70px; 
+        align-items: center;
+    }
+
+    .nav_container {
+        padding: 0 50px;
+        height: 80px;
+    }
+
+    .nav_item {
+        margin: 0 20px;
+        font-size: 14px;
+    }
+
+    .nav_link {
+        padding: 5px 15px;
+    }
+
+    .nav_list {
+        justify-content: space-around;
+    }
+
+    .sub_list {
+        top: 100%;
+        left: -150%;
+    }
+
+    .sub_link {
+        font-size: 18px;
+    }
+
+    .logo_img {
+        height: 65px;
+        width: 100%;
+    }
+
+    .raceIntro h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .raceIntro p {
+        font-size: 25px;
+    }
+
+    .categorias p {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 1em 2.5em;
+        margin: 0 80px;
+    }
+
+    button h5{
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 80px 0;
+    }
+
+    .footer .textFinal {
+        font-size: 18px;
+    }
+
+    .footer hr {
+        margin: 22px 240px;
+    }
+
+    .footer h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .footer i {
+        font-size: 26px;
+        gap: 10px;
+    }
+}
